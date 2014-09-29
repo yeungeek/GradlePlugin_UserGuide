@@ -20,7 +20,8 @@ baz | baz  | baz|
 baz | baz  | baz|
 
 **特色**
+
 我们是有实例的人
 
-books from https://www.gitbook.io/book/yeungeek/gradle-plugin-user-guide
 
+[![Build Status](https://www.gitbook.io/button/status/book/yeungeek/gradle-plugin-user-guide)](https://www.gitbook.io/book/yeungeek/gradle-plugin-user-guide/activity)
