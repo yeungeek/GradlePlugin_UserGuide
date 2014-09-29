@@ -1,7 +1,7 @@
 # 说明
 Gradle Plugin User Guide中文版
 ========================
-Gradle android的使用，并结合例子说明
+Gradle Plugin的使用，并结合例子说明
 
 * Gradle Plugin User Guide中文版 正在翻译当中 欢迎大家一起加入
 * github: https://github.com/yeungeek/GradlePlugin_UserGuide
@@ -11,12 +11,16 @@ Gradle android的使用，并结合例子说明
 
 **翻译进度**
 
-章节| 时间 | 译者|示例
+章节| 时间 | 译者|实例
 ----|------|----|----
-foo | foo  | foo|foo
-bar | bar  | bar|
+1 | 14.09.29  | [yeungeek](https://github.com/yeungeek)|raw
+2 | 14.09.29  | [yeungeek](https://github.com/yeungeek)|
+baz | baz  | baz|
+baz | baz  | baz|
 baz | baz  | baz|
 
+**特色**
+我们是有实例的人
 
 books from https://www.gitbook.io/book/yeungeek/gradle-plugin-user-guide
 
