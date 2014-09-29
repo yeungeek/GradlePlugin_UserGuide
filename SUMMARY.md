@@ -1,12 +1,12 @@
 # Summary
 
 * [序言](README.md)
-* [Introduction](11_goals_of_the_new_build_system.md)
-   * [Goals of the new Build System](goals_of_the_new_build_system.md)
-   * [Why Gradle?](why_gradle.md)
-* [Requirements](why_gradle.md)
+* [简介](11_goals_of_the_new_build_system.md)
+   * [新构建系统的目标](goals_of_the_new_build_system.md)
+   * [为什么使用Gradle?](why_gradle.md)
+* [配置](req.md)
 * [Basic Project](requirements.md)
-   * [Simple build files](031_simple_build_files)
+   * [Simple build files](031_simple_build_files.md)
    * [Project Structure](project_structure.md)
        * [Configuring the Structure](configuring_the_structure)
    * [Build Tasks](build_tasks)
