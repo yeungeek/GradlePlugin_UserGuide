@@ -1,6 +1,8 @@
 # 说明
 Gradle Plugin User Guide中文版
 ========================
+[![Build Status](https://www.gitbook.io/button/status/book/yeungeek/gradle-plugin-user-guide)](https://www.gitbook.io/book/yeungeek/gradle-plugin-user-guide/activity)
+
 Gradle Plugin的使用，并结合例子说明
 
 * Gradle Plugin User Guide中文版 正在翻译当中 欢迎大家一起加入
@@ -22,6 +24,3 @@ baz | baz  | baz|
 **特色**
 
 我们是有实例的人
-
-
-[![Build Status](https://www.gitbook.io/button/status/book/yeungeek/gradle-plugin-user-guide)](https://www.gitbook.io/book/yeungeek/gradle-plugin-user-guide/activity)
