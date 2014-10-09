@@ -7,7 +7,7 @@
 * [配置](req.md)
 * [基础工程](requirements.md)
    * [简单构建文件](031_simple_build_files.md)
-   * [Project Structure](project_structure.md)
+   * [工程结构](project_structure.md)
        * [Configuring the Structure](configuring_the_structure)
    * [Build Tasks](build_tasks)
        * [General Tasks](general_tasks)
