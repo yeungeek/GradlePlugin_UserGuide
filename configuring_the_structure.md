@@ -14,7 +14,7 @@ sourceSets {
 ```
 > **注意：** **<font color='green'>srcDir</font>**将会被添加到已存在的源文件目录中(这个在Gradle文档中没有提到，但是实际上确实是这样执行了)
 
-要替换默认的源文件目录，你需要使用一个数组路径的**<font color='green'>srcDirs</font>**来替代.下面是调用使用对象的另外一种不同的方法：
+要替换默认的源文件目录，你需要使用一个数组路径的**<font color='green'>srcDirs</font>**来替代.下面是使用调用对象的另外一种不同的方法：
 ``` groovy
 sourceSets {
     main.java.srcDirs = ['src/java']
@@ -42,5 +42,12 @@ android {
     }
 }
 ```
-> 注意：因为旧的结构把所有的源文件(java, aidl, renderscript, and java resources)放在同一个目录中,
+> 注意：因为旧的结构把所有的源文件(java, aidl, renderscript, and java resources)放在同一个目录中,所以我们需要重新映射所有的sourceSet新组件到同一个**<font color='green'>src</font>**目录下.
+
+> 注意：**<font color='green'>setRoot()</font>**会移动所有的sourceSet(包括它的子目录)到新的目录.例子中把**<font color='green'>src/androidTest/*</font>**移动到**<font color='green'>tests/*</font>**
+
+这是在Android中特有的，在Java sourceSets中不起作用.
+
+上述的就是工程迁移的简单示例.
+
 
