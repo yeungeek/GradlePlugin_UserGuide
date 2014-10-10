@@ -8,7 +8,7 @@
 * [基础工程](requirements.md)
    * [简单构建文件](031_simple_build_files.md)
    * [工程结构](project_structure.md)
-       * [Configuring the Structure](configuring_the_structure)
+       * [配置工程结构](configuring_the_structure.md)
    * [Build Tasks](build_tasks)
        * [General Tasks](general_tasks)
        * [Java project tasks](java_project_tasks)

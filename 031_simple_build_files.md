@@ -41,7 +41,7 @@ android {
 
 **重要：** 你只能使用**<font color='green'>android</font>**插件.如果同时使用**<font color='green'>java</font>**插件，会导致构建错误.
 
-**注意：** 你还需要添加*local.properties*文件，使用**<font color='green'>sdk.dir</font>**属性，来设置已经存在的SDK路径.    
+**注意：** 你还需要添加*local.properties*文件，使用**<font color='green'>sdk.dir</font>**属性，来设置已经存在的SDK路径.
 另外，你也可以设置环境变量**<font color='green'>ANDROID_HOME</font>**.这两种方式没有什么区别,可以根据你自己的喜好来选择一种.
 
 
