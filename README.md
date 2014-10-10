@@ -24,3 +24,5 @@ baz | baz  | baz|
 **特色**
 
 我们是有实例的人
+
+gradle对应的示例代码，可以fork [Samples](https://github.com/yeungeek/Android-Gradle-Samples).
