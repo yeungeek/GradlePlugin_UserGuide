@@ -16,9 +16,10 @@ Gradle Plugin的使用，并结合例子说明
 章节| 时间 | 译者|实例
 ----|------|----|----
 1 | 14.09.29  | [yeungeek](https://github.com/yeungeek)|[HelloWorld](https://github.com/yeungeek/Android-Gradle-Samples/tree/master/HelloWorld)
-2 | 14.09.29  | [yeungeek](https://github.com/yeungeek)|
+2 | 14.09.29  | [yeungeek](https://github.com/yeungeek)|-
 3.1 | 14.10.08  | [yeungeek](https://github.com/yeungeek)|
 3.2 | 14.10.09  | [yeungeek](https://github.com/yeungeek)|
+3.3 | 14.10.10  | [yeungeek](https://github.com/yeungeek)|
 baz | baz  | baz|
 
 **特色**
