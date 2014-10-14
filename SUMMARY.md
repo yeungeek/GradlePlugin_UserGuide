@@ -11,7 +11,7 @@
        * [配置工程结构](configuring_the_structure.md)
    * [构建任务](build_tasks.md)
        * [通用任务](general_tasks.md)
-       * [Java工程任务](java_project_tasks)
+       * [Java工程任务](java_project_tasks.md)
        * [Android任务](android_tasks.md)
    * [Basic Build Customization](basic_build_customization.md)
        * [Manifest entries](manifest_entries)
