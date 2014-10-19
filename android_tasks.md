@@ -14,3 +14,6 @@ Android插件使用了相同的约定，使它可以兼容其他插件，并且�
 这个任务会清空工程的输出
 
 
+新的标志性任务是必须的，为了能够保证在没有设备连接的情况下执行定期检查.  
+要注意的是**<font color='green'>build</font>**并不依赖于**<font color='green'>deviceCheck</font>**，或者**<font color='green'>connectedCheck</font>**
+
