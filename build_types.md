@@ -26,6 +26,7 @@ android {
 上面的代码片段实现了以下功能：
 * 配置默认的**<font color='green'>debug</font>**构建类型:
   * 设置包名为`<app appliationId>`.debug,以便能够在同一个设备上安装*debug*和*release*版本的apk
-* 
+* 创建了名为**<font color='green'>jnidebug</font>**的新*BuildType*,并且配置为是**<font color='green'>debug</font>**构建类型的一个副本.
+* 继续配置**<font color='green'>jnidebug</font>**，可以构建JNI组件,而且增加了一个不同的包名后缀.
 
 
