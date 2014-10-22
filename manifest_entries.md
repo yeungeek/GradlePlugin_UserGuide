@@ -49,4 +49,28 @@ android {
     }
 }
 ```
->注意: 不要使用使用在给定范围内已经存在的getter方法可能引起冲突的方法名.例如，在`defaultConfig { ...}`中调用`getVersionName()`会自动
+>注意: 不要使用使用在给定范围内已经存在的getter方法可能引起冲突的方法名.例如，在`defaultConfig { ...}`中调用`getVersionName()`会自动使用defaultConfig.getVersionName()方法去替代自定义的方法.
+
+如果一个属性不是通过DSL来设置的，一些默认的值将被使用.下表是可能用到的默认值:
+
+Property Name| Default value in DSL object | Default value
+----|------|----
+**<font color='green'>versionCode</font>**|-1| value from manifest if present
+**<font color='green'>versionName</font>**|null| value from manifest if present
+**<font color='green'>minSdkVersion</font>**|-1| value from manifest if present
+**<font color='green'>targetSdkVersion</font>**|-1| value from manifest if present
+**<font color='green'>applicationId</font>**|null| value from manifest if present
+**<font color='green'>testApplicationId</font>**|null|applicationId + “.test”
+**<font color='green'>testInstrumentationRunner</font>**|null|android.test.InstrumentationTestRunner
+**<font color='green'>signingConfig</font>**|null|null
+**<font color='green'>proguardFile</font>**|N/A (set only)|N/A (set only)
+**<font color='green'>proguardFiles</font>**|N/A (set only)|N/A (set only)
+
+如果你在构建脚本中使用了自定义逻辑来查询这些属性，第二列的值就变得很重要.例如,你可能会写:
+``` groovy
+if (android.defaultConfig.testInstrumentationRunner == null) {
+    // assign a better default...
+}
+```
+如果这值一直为`null`,那么在构建的时候将被替换成第3列的默认值,但是在DSL中没有包含该值,所以你无法查询该值
+除非是真的有必要才会如此定义，这是为了预防解析应用的manifest文件.
