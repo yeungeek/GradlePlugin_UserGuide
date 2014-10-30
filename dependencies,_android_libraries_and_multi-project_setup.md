@@ -1,1 +1,1 @@
-# Dependencies, Android Libraries and Multi-project setup
+# 依赖,Android库和多项目设置
