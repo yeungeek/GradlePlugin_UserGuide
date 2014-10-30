@@ -21,7 +21,9 @@ Gradle Plugin的使用，并结合例子说明
 3.2 | 14.10.09  | [yeungeek](https://github.com/yeungeek)|
 3.3 | 14.10.10  | [yeungeek](https://github.com/yeungeek)|
 3.4 | 14.10.20  | [yeungeek](https://github.com/yeungeek)|
-baz | baz  | baz|
+4.1 | 14.11.01  | [yeungeek](https://github.com/yeungeek)|
+4.2 | 14.11.03  | [yeungeek](https://github.com/yeungeek)|
+4.3 | 14.11.04  | [yeungeek](https://github.com/yeungeek)|
 
 **特色**
 
