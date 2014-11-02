@@ -13,5 +13,32 @@ debug keystore的位置在`$HOME/.android/debug.keystore`，如果不存在则�
 
 **<font color='green'>debug</font>**构建类型会自动使用**<font color='green'>debug</font>**的签名配置.
 
+默认配置中可以创建其他配置或者自定义构建.通过**<font color='green'>signingConfigs</font>** DSL容器来完成:
+``` groovy
+android {
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+        }
+
+        myConfig {
+            storeFile file("other.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+    buildTypes {
+        foo {
+            debuggable true
+            jniDebuggable true
+            signingConfig signingConfigs.myConfig
+        }
+    }
+}
+```
+
+上面的代码片段修改了debug keystore的位置到工程的根目录下.设置使用了上述的配置会自动影响其他的构建类型,在上述的例子就是**<font color='green'>debug</font>**的构建类型.
 
 
