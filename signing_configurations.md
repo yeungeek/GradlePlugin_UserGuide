@@ -51,4 +51,5 @@ android {
 
 
 **注意:**
-> **如果你将这些文件添加到版本控制中，你可能不想把密码存储在文件中.下面的`Stack Overflow`解答提供了如何从控制台或者从环境变量中读取密码的方法:** http://stackoverflow.com/questions/18328730/how-to-create-a-release-signed-apk-file-using-gradle
+> **如果你将这些文件添加到版本控制中，你可能不想把密码存储在文件中.下面的`Stack Overflow`解答提供了如何从控制台或者从环境变量中读取密码的方法:** http://stackoverflow.com/questions/18328730/how-to-create-a-release-signed-apk-file-using-gradle  
+**我们以后会在这个指南中更新更多的详细信息**
