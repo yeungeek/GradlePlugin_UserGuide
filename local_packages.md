@@ -18,6 +18,8 @@ android {
 * debugCompile debug构建类型
 * releaseCompile release构建类型
 
+因为不可能去构建一个没有关联任何构建类型的APK,APK默认配置了两个或两个以上的编译配置：compile和`<buildtype>`Compile.创建一个新的构建类型将会自动创建一个基于该名字的新配置.
 
+对于debug版本需要使用一个自定义库(为了反馈实例化的崩溃信息等),但分布时不需要，或者它们依赖于同一个库的不同版本时会非常有用.
 
 
