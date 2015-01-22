@@ -4,9 +4,9 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>序言 | 说明</title>
+        <title>简单构建文件 | 说明</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Build Status">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,8 +18,10 @@
     
     
     
-    <link rel="next" href="./11_goals_of_the_new_build_system.html" />
+    <link rel="next" href="./project_structure.html" />
     
+    
+    <link rel="prev" href="./requirements.html" />
     
 
         
@@ -31,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="0" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="3.1" data-basepath="." data-revision="1421856865374">
     
 
 <div class="book-summary">
@@ -49,7 +51,7 @@
         
     
         
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="./index.html">
@@ -150,7 +152,7 @@
                 
     
         
-        <li class="chapter " data-level="3.1" data-path="031_simple_build_files.html">
+        <li class="chapter active" data-level="3.1" data-path="031_simple_build_files.html">
             
                 
                     <a href="./031_simple_build_files.html">
@@ -1045,170 +1047,43 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8340">
+                    <section class="normal" id="section-gitbook_8361">
                     
-                        <h1 id="">说明</h1>
-<h1 id="gradle-plugin-user-guide">Gradle Plugin User Guide中文版</h1>
-<p><a href="https://www.gitbook.io/book/yeungeek/gradle-plugin-user-guide/activity" target="_blank"><img src="https://www.gitbook.io/button/status/book/yeungeek/gradle-plugin-user-guide" alt="Build Status"></a></p>
-<p>Gradle Plugin的使用，并结合例子说明</p>
-<ul>
-<li>Gradle Plugin User Guide中文版 正在翻译当中 欢迎大家一起加入</li>
-<li>github: <a href="https://github.com/yeungeek/GradlePlugin_UserGuide" target="_blank">https://github.com/yeungeek/GradlePlugin_UserGuide</a></li>
-<li>使用了gitbook进行编辑：<a href="http://yeungeek.gitbooks.io/gradle-plugin-user-guide/" target="_blank">http://yeungeek.gitbooks.io/gradle-plugin-user-guide/</a></li>
-<li>原文地址：<a href="http://tools.android.com/tech-docs/new-build-system/user-guide" target="_blank">http://tools.android.com/tech-docs/new-build-system/user-guide</a></li>
-<li>我会开放权限给需要加入的同学，联系我: yeungeek#gmail.com</li>
-</ul>
-<p><strong>翻译进度</strong></p>
-<table>
-<thead>
-<tr>
-<th>章节</th>
-<th>时间</th>
-<th>译者</th>
-<th>实例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>14.09.29</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td><a href="https://github.com/yeungeek/Android-Gradle-Samples/tree/master/HelloWorld" target="_blank">HelloWorld</a></td>
-</tr>
-<tr>
-<td>2</td>
-<td>14.09.29</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td>3.1</td>
-<td>14.10.08</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td></td>
-</tr>
-<tr>
-<td>3.2</td>
-<td>14.10.09</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td></td>
-</tr>
-<tr>
-<td>3.3</td>
-<td>14.10.10</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td></td>
-</tr>
-<tr>
-<td>3.4</td>
-<td>14.10.20</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td></td>
-</tr>
-<tr>
-<td>4.1</td>
-<td>14.11.03</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td></td>
-</tr>
-<tr>
-<td>4.2</td>
-<td>14.11.05</td>
-<td><a href="https://github.com/yeungeek" target="_blank">yeungeek</a></td>
-<td></td>
-</tr>
-<tr>
-<td>4.3</td>
-<td>14.12.01</td>
-<td><a href="https://github.com/flyouting" target="_blank">flyouting</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>特色</strong></p>
-<p>我们是有实例的人</p>
-<p>gradle对应的示例代码，可以fork <a href="https://github.com/yeungeek/Android-Gradle-Samples" target="_blank">Samples</a>.</p>
-<h1 id="summary">Summary</h1>
-<ul>
-<li><a href="README.html">序言</a></li>
-<li><a href="11_goals_of_the_new_build_system.html">简介</a><ul>
-<li><a href="goals_of_the_new_build_system.html">新构建系统的目标</a></li>
-<li><a href="why_gradle.html">为什么使用Gradle?</a></li>
-</ul>
-</li>
-<li><a href="req.html">配置</a></li>
-<li><a href="requirements.html">基础工程</a><ul>
-<li><a href="031_simple_build_files.html">简单构建文件</a></li>
-<li><a href="project_structure.html">工程结构</a><ul>
-<li><a href="configuring_the_structure.html">配置工程结构</a></li>
-</ul>
-</li>
-<li><a href="build_tasks.html">构建任务</a><ul>
-<li><a href="general_tasks.html">通用任务</a></li>
-<li><a href="java_project_tasks.html">Java工程任务</a></li>
-<li><a href="android_tasks.html">Android任务</a></li>
-</ul>
-</li>
-<li><a href="basic_build_customization.html">基本的构建自定义</a><ul>
-<li><a href="manifest_entries.html">Manifest属性</a></li>
-<li><a href="build_types.html">构建类型</a></li>
-<li><a href="signing_configurations.html">签名配置</a></li>
-<li><a href="running_proguard.html">运行ProGuard</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="dependencies,_android_libraries_and_multi-project_setup.html">依赖,Android库和多项目设置</a><ul>
-<li><a href="dependencies_on_binary_packages.html">依赖二进制包</a><ul>
-<li><a href="local_packages.html">本地包</a></li>
-<li><a href="remote_artifacts.html">远程文件</a></li>
-</ul>
-</li>
-<li><a href="multi_project_setup.html">多项目设置</a></li>
-<li><a href="library_projects.html">库工程</a><ul>
-<li><a href="creating_a_library_project.html">创建一个库工程</a></li>
-<li><a href="differences_between_a_project_and_a_library_project.html">普通项目和库项目的区别</a></li>
-<li><a href="referencing_a_library.html">引用一个库工程</a></li>
-<li><a href="library_publication.html">库工程发布</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="testing.html">测试</a><ul>
-<li><a href="basics_and_configuration.html">基本原理和配置</a></li>
-<li><a href="running_tests.html">运行测试</a></li>
-<li><a href="testing_android_libraries.html">测试Android库工程</a></li>
-<li><a href="test_reports.html">测试报告</a><ul>
-<li><a href="single_projects.html">独立工程</a></li>
-<li><a href="multi-projects_reports.html">多工程报告</a></li>
-</ul>
-</li>
-<li><a href="lint_support.html">Lint支持</a></li>
-</ul>
-</li>
-<li><a href="build_variants.html">构建变种版本</a><ul>
-<li><a href="product_flavors.html">产物定制</a></li>
-<li><a href="build_type_+_product_flavor_=_build_variant">构建类型+产物定制=构建变种版本</a></li>
-<li><a href="product_flavor_configuration.html">产物定制配置</a></li>
-<li><a href="sourcesets_and_dependencies.html">源组件和依赖</a></li>
-<li><a href="building_and_tasks.html">构建和任务</a></li>
-<li><a href="testing.html">测试</a></li>
-<li><a href="multi-flavor_variants.html">多定制的变种版本</a></li>
-</ul>
-</li>
-<li><a href="advanced_build_customization.html">高级构建的自定义</a><ul>
-<li><a href="build_options.html">构建选项</a><ul>
-<li><a href="java_compilation_options.html">Java编译选项</a></li>
-<li><a href="aapt_options.html">aapt选项</a></li>
-<li><a href="dex_options.html">dex选项</a></li>
-</ul>
-</li>
-<li><a href="manipulating_tasks.html">操作tasks</a></li>
-<li><a href="buildtype_and_product_flavor_property_reference.html">构建类型和产物定制的属性引用</a></li>
-<li><a href="using_sourcecompatibility_17.html">使用sourceCompatibility 1.7</a></li>
-</ul>
-</li>
-</ul>
+                        <h1 id="">简单构建文件</h1>
+<p>一个最简单Gradle纯Java工程的build.gradle文件包含了以下内容:</p>
+<pre><code class="lang-groovy">apply <span class="hljs-string">plugin:</span> <span class="hljs-string">'java'</span>
+</code></pre>
+<p>这是Gradle包装的Java插件。该插件提供了所有构建和测试Java应用程序的东西。
+最简单的Android工程的build.gradle描述：</p>
+<pre><code class="lang-groovy">buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath <span class="hljs-string">'com.android.tools.build:gradle:0.11.1'</span>
+    }
+}
+
+apply <span class="hljs-string">plugin:</span> <span class="hljs-string">'android'</span>
+
+android {
+    compileSdkVersion <span class="hljs-number">19</span>
+    buildToolsVersion <span class="hljs-string">"19.0.0"</span>
+}
+</code></pre>
+<p><font color='red'>译者注：</font>目前gradle tools版本为0.13.+(2014.10.08)</p>
+<p>上述内容包含了Android构建文件的3个主要部分：</p>
+<p><strong><font color='green'>buildscript { ... }</font></strong>配置了驱动构建的代码.</p>
+<p>在这个例子中，他申明了使用Maven中央库，并且申明了一个Maven构件的依赖classpath。这个构件声明了Gradle的Android插件版本为0.11.1.</p>
+<p><strong>注意</strong>：这里的配置只影响了构建过程的代码，而不是整个工程的代码.工程本身需要声明它自己的仓库和依赖.这个后面会提到.</p>
+<p>然后，跟前面提到的Java插件一样，添加了<strong><font color='green'>android</font></strong>插件.</p>
+<p>最后，<strong><font color='green'>android { ... }</font></strong>配置了所有android构建的参数.也是Android DSL的入口点.
+默认情况下，只有编译的target和build-tools版本是必须的.就是<strong><font color='green'>compileSdkVersion</font></strong>和<strong><font color='green'>buildtoolsVersion</font> </strong>两个属性.
+编译的target属性相当于在老的构建系统中<code>project.properties</code>中的target属性.这个新属性和老的target属性一样可以指定一个int(api等级)或者string类型的值.</p>
+<p><strong>重要：</strong> 你只能使用<strong><font color='green'>android</font></strong>插件.如果同时使用<strong><font color='green'>java</font></strong>插件，会导致构建错误.</p>
+<p><strong>注意：</strong> 你还需要添加<em>local.properties</em>文件，使用<strong><font color='green'>sdk.dir</font></strong>属性，来设置已经存在的SDK路径.
+另外，你也可以设置环境变量<strong><font color='green'>ANDROID_HOME</font></strong>.这两种方式没有什么区别,可以根据你自己的喜好来选择一种.</p>
 
                     
                     </section>
@@ -1219,8 +1094,10 @@
         </div>
 
         
+        <a href="./requirements.html" class="navigation navigation-prev " aria-label="Previous page: 基础工程"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./11_goals_of_the_new_build_system.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 简介"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="./project_structure.html" class="navigation navigation-next " aria-label="Next page: 工程结构"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
