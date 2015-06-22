@@ -38,7 +38,7 @@
    * [Lint支持](lint_support.md)
 * [构建变种版本](build_variants.md)
    * [产物定制](product_flavors.md)
-   * [构建类型+产物定制=构建变种版本](build_type_+_product_flavor_=_build_variant)
+   * [构建类型+产物定制=构建变种版本](build_type_+_product_flavor_=_build_variant.md)
    * [产物定制配置](product_flavor_configuration.md)
    * [源组件和依赖](sourcesets_and_dependencies.md)
    * [构建和任务](building_and_tasks.md)
