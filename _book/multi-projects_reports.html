@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.4.2" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="5.4.2" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1047,9 +1047,30 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8369">
+                    <section class="normal" id="section-gitbook_1501">
                     
                         <h1 id="">多工程报告</h1>
+<p>一个工程中配置了多个应用和库，当同一个时间运行所有测试时，它会生成一份包含了所有测试结果的报告，这个非常有用。</p>
+<p>为了实现这个目标，在同一个依赖文件需要使用不同的插件。可以通过以下方式实现：</p>
+<pre><code class="lang-groovy">buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath <span class="hljs-string">'com.android.tools.build:gradle:0.5.6'</span>
+    }
+}
+
+apply <span class="hljs-string">plugin:</span> <span class="hljs-string">'android-reporting'</span>
+</code></pre>
+<p>这个必须添加到工程的根目录下，例如和settings.gradle在同一个目录下。</p>
+<p>然后，在根目录下，执行下面这个命令会运行所有测试，并合并所有的报告：</p>
+<pre><code class="lang-groovy">gradle deviceCheck mergeAndroidReports --<span class="hljs-keyword">continue</span>
+</code></pre>
+<blockquote>
+<p>注意：<code>--continue</code>选项保证能够执行所有测试，不管子工程的运行是否失败。如果没有这个选项，第一个失败测试就会终止全部的测试，导致一些项目不能够执行测试。</p>
+</blockquote>
 
                     
                     </section>

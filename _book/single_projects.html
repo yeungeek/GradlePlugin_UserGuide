@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.4.1" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="5.4.1" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1047,9 +1047,23 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8381">
+                    <section class="normal" id="section-gitbook_1519">
                     
                         <h1 id="">独立工程</h1>
+<p>一个工程将会自动生成测试运行。默认位置：</p>
+<pre><code class="lang-groovy">build<span class="hljs-regexp">/reports/</span>androidTests
+</code></pre>
+<p>这个和jUnit报告所在位置类似，<code>build/reports/tests</code>，其他的报告通常位于<code>build/reports/&lt;plugin&gt;/</code>。</p>
+<p>该位置可以自定义</p>
+<pre><code class="lang-groovy">android {
+    ...
+
+    testOptions {
+        reportDir = <span class="hljs-string">"$project.buildDir/foo/report"</span>
+    }
+}
+</code></pre>
+<p>报告会合并运行在不同设备上的测试结果。</p>
 
                     
                     </section>

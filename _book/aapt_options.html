@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="7.1.2" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="7.1.2" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1047,9 +1047,17 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8341">
+                    <section class="normal" id="section-gitbook_1473">
                     
                         <h1 id="aapt">aapt选项</h1>
+<pre><code class="lang-groovy">android {
+    aaptOptions {
+        noCompress <span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span>
+        ignoreAssetsPattern <span class="hljs-string">"!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir&gt;_*:!CVS:!thumbs.db:!picasa.ini:!*~"</span>
+    }
+}
+</code></pre>
+<p>这个将影响所有使用<code>aapt</code>的task</p>
 
                     
                     </section>

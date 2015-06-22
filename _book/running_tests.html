@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.2" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="5.2" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1047,9 +1047,33 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8379">
+                    <section class="normal" id="section-gitbook_1509">
                     
                         <h1 id="">运行测试</h1>
+<p>正如前面提到的，标志性task <strong><font color='green'>connectedCheck</font></strong> 需要一个连接的设备来启动。
+这个过程依赖<strong><font color='green'>androidTest</font></strong> task，所以也会运行该任务。这个task会执行下面这些任务：</p>
+<ul>
+<li>确认应用和测试应用都被构建(依赖<strong><font color='green'>assembleDebug</font></strong>和)
+<strong><font color='green'>assembleDebug</font></strong></li>
+<li>安装这两个应用</li>
+<li>运行测试</li>
+<li>卸载这两个应用</li>
+</ul>
+<p>如果多于一个设备连接，所有的测试都会同时运行在所有连接的设备上。如果其中一个设备测试失败，那么其他设备也算是测试失败。</p>
+<p>所有的测试结果被保存为xml文件，路径：</p>
+<pre><code class="lang-groovy">build/androidTest-results
+</code></pre>
+<p>(类似于junit的报告被保存在build/test-results目录下)</p>
+<p>同样，路径可以自定义配置：</p>
+<pre><code class="lang-groovy">android {
+    ...
+
+    testOptions {
+        resultsDir = <span class="hljs-string">"$project.buildDir/foo/results"</span>
+    }
+}
+</code></pre>
+<p><strong><font color='green'>android.testOptions.resultsDir </font></strong>的值通过<strong><font color='green'>Project.file(String)</font></strong>获取。</p>
 
                     
                     </section>

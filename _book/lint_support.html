@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.5" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="5.5" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1047,9 +1047,68 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8364">
+                    <section class="normal" id="section-gitbook_1496">
                     
                         <h1 id="lint">Lint支持</h1>
+<blockquote>
+<p>Lint: <a href="https://developer.android.com/tools/help/lint.html" target="_blank">Lint</a></p>
+</blockquote>
+<p>从0.7.0 版本开始，你可以为一个指定的Variant(变种)运行lint，或者是所有的Variant都运行lint。它将会生成一个描述哪个指定的Variant存在问题的报告。</p>
+<p>你可以通过以下lint选项配置。通常情况下你只需配置其中一部分，下面是所有的可用选项。</p>
+<pre><code class="lang-groovy">android {
+    lintOptions {
+        <span class="hljs-comment">// set to true to turn off analysis progress reporting by lint</span>
+        quiet <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// if true, stop the gradle build if errors are found</span>
+        abortOnError <span class="hljs-literal">false</span>
+        <span class="hljs-comment">// if true, only report errors</span>
+        ignoreWarnings <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// if true, emit full/absolute paths to files with errors (true by default)</span>
+        <span class="hljs-comment">//absolutePaths true</span>
+        <span class="hljs-comment">// if true, check all issues, including those that are off by default</span>
+        checkAllWarnings <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// if true, treat all warnings as errors</span>
+        warningsAsErrors <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// turn off checking the given issue id's</span>
+        disable <span class="hljs-string">'TypographyFractions'</span>,<span class="hljs-string">'TypographyQuotes'</span>
+        <span class="hljs-comment">// turn on the given issue id's</span>
+        enable <span class="hljs-string">'RtlHardcoded'</span>,<span class="hljs-string">'RtlCompat'</span>, <span class="hljs-string">'RtlEnabled'</span>
+        <span class="hljs-comment">// check *only* the given issue id's</span>
+        check <span class="hljs-string">'NewApi'</span>, <span class="hljs-string">'InlinedApi'</span>
+        <span class="hljs-comment">// if true, don't include source code lines in the error output</span>
+        noLines <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// if true, show all locations for an error, do not truncate lists, etc.</span>
+        showAll <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// Fallback lint configuration (default severities, etc.)</span>
+        lintConfig file(<span class="hljs-string">"default-lint.xml"</span>)
+        <span class="hljs-comment">// if true, generate a text report of issues (false by default)</span>
+        textReport <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// location to write the output; can be a file or 'stdout'</span>
+        textOutput <span class="hljs-string">'stdout'</span>
+        <span class="hljs-comment">// if true, generate an XML report for use by for example Jenkins</span>
+        xmlReport <span class="hljs-literal">false</span>
+        <span class="hljs-comment">// file to write report to (if not specified, defaults to lint-results.xml)</span>
+        xmlOutput file(<span class="hljs-string">"lint-report.xml"</span>)
+        <span class="hljs-comment">// if true, generate an HTML report (with issue explanations, sourcecode, etc)</span>
+        htmlReport <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// optional path to report (default will be lint-results.html in the builddir)</span>
+        htmlOutput file(<span class="hljs-string">"lint-report.html"</span>)
+
+   <span class="hljs-comment">// set to true to have all release builds run lint on issues with severity=fatal</span>
+   <span class="hljs-comment">// and abort the build (controlled by abortOnError above) if fatal issues are found</span>
+   checkReleaseBuilds <span class="hljs-literal">true</span>
+        <span class="hljs-comment">// Set the severity of the given issues to fatal (which means they will be</span>
+        <span class="hljs-comment">// checked during release builds (even if the lint target is not included)</span>
+        fatal <span class="hljs-string">'NewApi'</span>, <span class="hljs-string">'InlineApi'</span>
+        <span class="hljs-comment">// Set the severity of the given issues to error</span>
+        error <span class="hljs-string">'Wakelock'</span>, <span class="hljs-string">'TextViewEdits'</span>
+        <span class="hljs-comment">// Set the severity of the given issues to warning</span>
+        warning <span class="hljs-string">'ResourceAsColor'</span>
+        <span class="hljs-comment">// Set the severity of the given issues to ignore (same as disabling the check)</span>
+        ignore <span class="hljs-string">'TypographyQuotes'</span>
+    }
+}
+</code></pre>
 
                     
                     </section>

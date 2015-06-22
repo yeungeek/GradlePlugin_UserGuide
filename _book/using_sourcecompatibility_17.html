@@ -31,7 +31,7 @@
 
 
         
-    <div class="book"  data-level="7.4" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="7.4" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1045,9 +1045,29 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8386">
+                    <section class="normal" id="section-gitbook_1516">
                     
                         <h1 id="sourcecompatibility-17">使用sourceCompatibility 1.7</h1>
+<p>使用Android KitKat (buildToolsVersion 19)，你可以使用diamond operator，multi-catch，switch中使用字符串，try with resource等等。为了实现这个，添加下面的配置。</p>
+<pre><code class="lang-groovy">android {
+    compileSdkVersion <span class="hljs-number">19</span>
+    buildToolsVersion <span class="hljs-string">"19.0.0"</span>
+
+    defaultConfig {
+        minSdkVersion <span class="hljs-number">7</span>
+        targetSdkVersion <span class="hljs-number">19</span>
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+</code></pre>
+<blockquote>
+<p>注意： 你可以设置 use <strong><font color='green'>minSdkVersion </font></strong>的值小于19，不过你只能使用除了try with resources之外的其他语言特性。如果要想使用try with resources特性，你必须设置使用use <strong><font color='green'>minSdkVersion </font></strong>版本为19.</p>
+</blockquote>
+<p>你同样需要确认Gradle是否使用1.7或者更高版本的JDK。(Android Gradle plugin也需要0.6.1或者更高版本。)</p>
 
                     
                     </section>

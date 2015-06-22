@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="7.1.3" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="7.1.3" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1047,9 +1047,19 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8356">
+                    <section class="normal" id="section-gitbook_1489">
                     
                         <h1 id="dex">dex选项</h1>
+<pre><code class="lang-groovy">android {
+    dexOptions {
+        incremental <span class="hljs-literal">false</span>
+        preDexLibraries = <span class="hljs-literal">false</span>
+        jumboMode = <span class="hljs-literal">false</span>
+        javaMaxHeapSize <span class="hljs-string">"2048M"</span>
+    }
+}
+</code></pre>
+<p>这个将影响所有使用dex的task。</p>
 
                     
                     </section>

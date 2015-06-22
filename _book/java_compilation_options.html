@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="7.1.1" data-basepath="." data-revision="1421856865374">
+    <div class="book"  data-level="7.1.1" data-basepath="." data-revision="1431000592957">
     
 
 <div class="book-summary">
@@ -1047,9 +1047,17 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8360">
+                    <section class="normal" id="section-gitbook_1492">
                     
                         <h1 id="java">Java编译选项</h1>
+<pre><code class="lang-groovy">android {
+    compileOptions {
+        sourceCompatibility = <span class="hljs-string">"1.6"</span>
+        targetCompatibility = <span class="hljs-string">"1.6"</span>
+    }
+}
+</code></pre>
+<p>默认值是“1.6”，这个设置会影响所有编译Java源代码的task。</p>
 
                     
                     </section>
